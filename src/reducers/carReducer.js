@@ -12,14 +12,14 @@ export const carReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_FEATURE":
       return {
-        ...state.car,
-        features: action.payload,
+        ...state,
+        car: [...state.car.features, action.payload],
       };
 
     case "REMOVE_FEATURE":
       return {
-        ...state.car,
-        features: action.payload,
+        ...state,
+        car: [...state.car.features, action.payload],
       };
 
     default:

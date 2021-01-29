@@ -16,8 +16,8 @@ const AdditionalFeature = (props) => {
     </li>
   );
 };
-
+const mapStateToProps = undefined;
 const mapDispatchToProps = {
   addFeature,
 };
-export default connect(mapDispatchToProps)(AdditionalFeature);
+export default connect(mapStateToProps, mapDispatchToProps)(AdditionalFeature);
